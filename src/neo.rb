@@ -70,7 +70,7 @@ class Object
     end
   end
 
-  in_ruby_version("1.9", "2") do
+  in_ruby_version("1.9", "2", "3") do
     public :method_missing
   end
 end
@@ -247,7 +247,7 @@ module Neo
         @failed_test = step
         @failure = step.failure
         add_progress(@pass_count)
-        @observations << Color.red("#{step.koan_file}##{step.name} has damaged your karma.")
+        @observations << Color.red("#{step.koan_file}##{step.name} is an obstacle on your path to awareness.")
         throw :neo_exit
       end
     end

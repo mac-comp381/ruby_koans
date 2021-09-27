@@ -22,7 +22,7 @@ class AboutNil < Neo::Koan
   end
 
   def test_nil_has_a_few_methods_defined_on_it
-    assert_equal __(true), nil.nil?
+    assert_equal __(true), nil.nil?  # The actual name of this method is "nil?", including the question mark
     assert_equal __(""), nil.to_s
     assert_equal __("nil"), nil.inspect
 
